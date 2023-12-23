@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "@/app/layout";
 
 const AboutPage: React.FC = () => {
   return (
