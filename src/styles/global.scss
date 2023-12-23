@@ -1,1 +1,18 @@
 @import 'header';
+@import 'footer';
+// @import 'variables';
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#_next {  // Adjust this ID to match your root div if it's different
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}

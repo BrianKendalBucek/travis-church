@@ -1,0 +1,36 @@
+@import './_variables';
+
+.footer {
+  background-color: $footer-background-color;
+  padding: 20px;
+  text-align: center;
+  // position: sticky;
+  // bottom: 0;
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .linksSection,
+    .socialMediaSection {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: $footer-link-color;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+        &:hover {
+          color: $footer-link-hover-color;
+        }
+      }
+    }
+  }
+
+  .copyRightSection {
+    font-size: 14px;
+    color: $footer-text-color;
+  }
+}
