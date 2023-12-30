@@ -3,8 +3,8 @@ import React from "react";
 export default function LeadershipTeam() {
   return (
     <section className="leadership-team">
-      <h2>Equipo de Liderazgo</h2>
-      <p>
+      <h2 className="about-space">Equipo de Liderazgo</h2>
+      <p className="brief-desc">
         Conoce a las personas dedicadas que lideran la Iglesia de Travis y
         Paulina con pasión y fe. Nuestro equipo de liderazgo está comprometido
         en guiar a nuestra congregación y servir a nuestra comunidad.

@@ -1,70 +1,70 @@
-@import 'variables';
+// @import 'variables';
 
-.about-us {
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: $padding-default;
-  height: 20rem;
+// .about-us {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   text-align: center;
+//   padding: $padding-default;
+//   height: 20rem;
 
-  .about-us-header {
-    background-image: url($bg-image-hero);
-  background-position: $bg-position-center;
+//   .about-us-header {
+//     background-image: url($bg-image-hero);
+//   background-position: $bg-position-center;
 
-  h2 {
-    color: $text-color-light;
-    font-size: $font-size-heading;
-  }
+//   h2 {
+//     color: $text-color-light;
+//     font-size: $font-size-heading;
+//   }
 
-  p {
-    color: $text-color-dark;
-    font-size: $font-size-paragraph;
-  }
-  }
+//   p {
+//     color: $text-color-dark;
+//     font-size: $font-size-paragraph;
+//   }
+//   }
 
-  .mission-statement,
-  .community-involvement,
-  .leadership-team {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   .mission-statement,
+//   .community-involvement,
+//   .leadership-team {
+//     background-color: #fff;
+//     border-radius: 5px;
+//     padding: 20px;
+//     margin-bottom: 20px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    h2 {
-      font-size: 2rem;
-      margin-top: 0;
-    }
+//     h2 {
+//       font-size: 2rem;
+//       margin-top: 0;
+//     }
 
-    p {
-      font-size: 1.2rem;
-      color: #555;
-    }
+//     p {
+//       font-size: 1.2rem;
+//       color: #555;
+//     }
 
-    .leadership-list {
-      display: flex;
-      justify-content: space-between;
+//     .leadership-list {
+//       display: flex;
+//       justify-content: space-between;
 
-      .leader-profile {
-        flex: 1;
-        text-align: center;
-        margin: 10px;
+//       .leader-profile {
+//         flex: 1;
+//         text-align: center;
+//         margin: 10px;
 
-        img {
-          max-width: 100%;
-          border-radius: 50%;
-        }
+//         img {
+//           max-width: 100%;
+//           border-radius: 50%;
+//         }
 
-        h3 {
-          font-size: 1.2rem;
-          margin: 10px 0;
-        }
+//         h3 {
+//           font-size: 1.2rem;
+//           margin: 10px 0;
+//         }
 
-        /* Uncomment if you want to style the role or position */
-        /* p {
-          font-size: 1rem;
-        } */
-      }
-    }
-  }
-}
+//         /* Uncomment if you want to style the role or position */
+//         /* p {
+//           font-size: 1rem;
+//         } */
+//       }
+//     }
+//   }
+// }

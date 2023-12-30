@@ -11,12 +11,10 @@
 .hero {
   background-image: url($bg-image-hero);
   background-position: $bg-position-center;
-
   h2 {
     color: $text-color-light;
     font-size: $font-size-heading;
   }
-
   p {
     color: $text-color-dark;
     font-size: $font-size-paragraph;
@@ -26,7 +24,6 @@
 .worship {
   background-image: url($bg-image-worship);
   background-position: $bg-position-worship;
-
   h2, p {
     color: $text-color-light;
   }
@@ -35,7 +32,7 @@
 .bible {
   background-image: url($bg-image-bible);
   background-position: $bg-position-bible;
-
+  margin: 5rem 0;
   h2, p {
     color: $text-color-light;
   }
@@ -45,7 +42,6 @@
   background-image: url($bg-image-community);
   background-position: $bg-position-worship;
   margin: 5rem 0;
-
   h2, p {
     color: $text-color-light;
   }
@@ -55,18 +51,18 @@
   background-image: url($bg-image-baptism);
   background-position: $bg-position-worship;
   margin: 5rem 0;
-
   h2, p {
     color: $text-color-light;
   }
 }
 
+
+/* Shared styles for sections with headings and content */
 .about, .events, .sermons {
   padding: $padding-sections;
   text-align: center;
   font-size: $font-size-paragraph;
   color: $text-color-primary;
-
   h2 {
     margin-bottom: 1rem;
     padding-bottom: 2rem;
@@ -79,73 +75,78 @@
   margin-bottom: 5rem;
 }
 
+/* About Us Page Styles */
 .about-us {
   text-align: center;
   font-size: $font-size-paragraph;
   color: $text-color-primary;
 
   .about-us-header {
-    background-image: url($bg-image-hero); /* Set the background image */
+    background-image: url($bg-image-hero);
     background-size: cover;
     background-position: $bg-position-center;
     color: $text-color-light;
     padding: $padding-default;
-    margin-bottom: 2rem; /* Adjust as needed */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
-
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     h1 {
       font-size: $font-size-heading;
       margin: 0;
-      padding: $padding-default; /* Add padding to make text more readable */
+      padding: $padding-default;
       background-color: rgba(0, 0, 0, 0.5);
     }
-
     p {
       font-size: $font-size-paragraph;
     }
-
   }
-  
+
   .mission-statement,
   .community-involvement,
   .leadership-team {
     margin-bottom: 2rem;
   }
-  
+
+  /* Leadership Team Styles */
+  .leadership-team {
+    .leadership-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      .leader-profile {
+        text-align: center;
+        margin: 1rem;
+        flex: 1;
+        max-width: calc(50% - 2rem);
+        img {
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
+        h3 {
+          margin-top: 1rem;
+          font-size: $font-size-subheading;
+        }
+      }
+    }
+  }
 }
 
+/* Additional Styles */
 .about-space {
   padding: 5rem;
 }
 
-/* Add the following styles to your SCSS file */
+.brief-desc {
+  padding: 0 20rem;
+}
 
-.leadership-team {
-  /* Your existing styles for the leadership-team section go here */
+.columns {
+  display: flex;
+}
 
-  .leadership-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-
-    .leader-profile {
-      text-align: center;
-      margin: 1rem; /* Adjust margin as needed to control spacing between profiles */
-      flex: 1; /* Distribute available space equally among profiles */
-      max-width: calc(50% - 2rem); /* Set maximum width for side-by-side profiles */
-
-      img {
-        border-radius: 50%; /* Make the images round */
-        width: 300px; /* Adjust the width as needed */
-        height: 300px; /* Adjust the height as needed */
-        object-fit: cover;
-      }
-
-      h3 {
-        margin-top: 1rem; /* Adjust margin as needed */
-        font-size: $font-size-subheading; /* Use the desired font size */
-      }
-    }
-  }
+.column {
+  padding: 0 15rem;
 }
