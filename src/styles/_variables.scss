@@ -1,5 +1,3 @@
-// Define your color scheme and other reusable properties
-
 // Header Colors and Styles
 $header-background-color: #fff;
 $header-text-color: #333;
@@ -7,15 +5,15 @@ $header-hover-color: #007bff;
 $header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 // Footer Colors and Styles
-$footer-background-color: #f8f9fa; // Light gray, adjust as needed
+$footer-background-color: #f8f9fa;
 $footer-text-color: #333;
 $footer-link-color: #007bff;
-$footer-link-hover-color: #0056b3; // Darker blue, adjust as needed
+$footer-link-hover-color: #0056b3;
 
 // Global Styles
-$link-color: $header-text-color; // Reuse the header text color for links
-$link-hover-color: $header-hover-color; // Reuse the header hover color for link hovers
-$text-color: $footer-text-color; // Reuse the footer text color for general text
+$link-color: $header-text-color;
+$link-hover-color: $header-hover-color;
+$text-color: $footer-text-color;
 
 $bg-image-hero: '/lisa.jpg';
 $bg-image-worship: '/pablo.jpg';
