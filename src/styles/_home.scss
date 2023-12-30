@@ -1,6 +1,6 @@
 @import 'variables';
 
-.hero, .worship, .bible {
+.hero, .worship, .bible, .community, .baptism {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -41,6 +41,26 @@
   }
 }
 
+.community {
+  background-image: url($bg-image-community);
+  background-position: $bg-position-worship;
+  margin: 5rem 0;
+
+  h2, p {
+    color: $text-color-light;
+  }
+}
+
+.baptism {
+  background-image: url($bg-image-baptism);
+  background-position: $bg-position-worship;
+  margin: 5rem 0;
+
+  h2, p {
+    color: $text-color-light;
+  }
+}
+
 .about, .events, .sermons {
   padding: $padding-sections;
   text-align: center;
@@ -57,4 +77,75 @@
 
 .sermon-videos, .events {
   margin-bottom: 5rem;
+}
+
+.about-us {
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
+
+  .about-us-header {
+    background-image: url($bg-image-hero); /* Set the background image */
+    background-size: cover;
+    background-position: $bg-position-center;
+    color: $text-color-light;
+    padding: $padding-default;
+    margin-bottom: 2rem; /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
+
+    h1 {
+      font-size: $font-size-heading;
+      margin: 0;
+      padding: $padding-default; /* Add padding to make text more readable */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: $font-size-paragraph;
+    }
+
+  }
+  
+  .mission-statement,
+  .community-involvement,
+  .leadership-team {
+    margin-bottom: 2rem;
+  }
+  
+}
+
+.about-space {
+  padding: 5rem;
+}
+
+/* Add the following styles to your SCSS file */
+
+.leadership-team {
+  /* Your existing styles for the leadership-team section go here */
+
+  .leadership-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+
+    .leader-profile {
+      text-align: center;
+      margin: 1rem; /* Adjust margin as needed to control spacing between profiles */
+      flex: 1; /* Distribute available space equally among profiles */
+      max-width: calc(50% - 2rem); /* Set maximum width for side-by-side profiles */
+
+      img {
+        border-radius: 50%; /* Make the images round */
+        width: 300px; /* Adjust the width as needed */
+        height: 300px; /* Adjust the height as needed */
+        object-fit: cover;
+      }
+
+      h3 {
+        margin-top: 1rem; /* Adjust margin as needed */
+        font-size: $font-size-subheading; /* Use the desired font size */
+      }
+    }
+  }
 }

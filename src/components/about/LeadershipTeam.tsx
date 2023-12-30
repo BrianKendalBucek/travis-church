@@ -1,30 +1,24 @@
 import React from "react";
 
-const LeadershipTeam = () => {
+export default function LeadershipTeam() {
   return (
-    <section>
-      <h2>Leadership Team</h2>
+    <section className="leadership-team">
+      <h2>Equipo de Liderazgo</h2>
       <p>
-        Meet the dedicated individuals who lead Travis and Paulina&apos;s Church
-        with passion and faith. Our leadership team is committed to guiding our
-        congregation and serving our community.
+        Conoce a las personas dedicadas que lideran la Iglesia de Travis y
+        Paulina con pasión y fe. Nuestro equipo de liderazgo está comprometido
+        en guiar a nuestra congregación y servir a nuestra comunidad.
       </p>
       <div className="leadership-list">
-        {/* You can add individual leader profiles here */}
         <div className="leader-profile">
-          <img src="leader1.jpg" alt="Leader 1" />
-          <h3>Leader Name 1</h3>
-          <p>Role or Position</p>
+          <img src="/don.jpg" alt="Leader 1" />
+          <h3>Pastor Travis Reid</h3>
         </div>
         <div className="leader-profile">
-          <img src="leader2.jpg" alt="Leader 2" />
-          <h3>Leader Name 2</h3>
-          <p>Role or Position</p>
+          <img src="betty.jpg" alt="Leader 2" />
+          <h3>Pastora Paulina Reid</h3>
         </div>
-        {/* Add more leader profiles as needed */}
       </div>
     </section>
   );
-};
-
-export default LeadershipTeam;
+}

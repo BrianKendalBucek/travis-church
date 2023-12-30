@@ -1,6 +1,6 @@
 import React from "react";
 
-const MissionStatement: React.FC = () => {
+export default function MissionStatement() {
   return (
     <div className="mission-statement">
       <p>
@@ -22,6 +22,4 @@ const MissionStatement: React.FC = () => {
       </p>
     </div>
   );
-};
-
-export default MissionStatement;
+}

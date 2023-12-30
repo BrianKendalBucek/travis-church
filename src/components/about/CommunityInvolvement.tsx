@@ -1,8 +1,8 @@
 import React from "react";
 
-const CommunityInvolvement = () => {
+export default function CommunityInvolvement() {
   return (
-    <section>
+    <section className="community-involvement">
       <h2>Community Involvement</h2>
       <p>
         At Travis and Paulina&apos;s Church, we are deeply committed to serving our
@@ -16,6 +16,4 @@ const CommunityInvolvement = () => {
       </p>
     </section>
   );
-};
-
-export default CommunityInvolvement;
+}
