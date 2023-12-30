@@ -1,0 +1,60 @@
+@import 'variables';
+
+.hero, .worship, .bible {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: $padding-default;
+  height: 20rem;
+}
+
+.hero {
+  background-image: url($bg-image-hero);
+  background-position: $bg-position-center;
+
+  h2 {
+    color: $text-color-light;
+    font-size: $font-size-heading;
+  }
+
+  p {
+    color: $text-color-dark;
+    font-size: $font-size-paragraph;
+  }
+}
+
+.worship {
+  background-image: url($bg-image-worship);
+  background-position: $bg-position-worship;
+
+  h2, p {
+    color: $text-color-light;
+  }
+}
+
+.bible {
+  background-image: url($bg-image-bible);
+  background-position: $bg-position-bible;
+
+  h2, p {
+    color: $text-color-light;
+  }
+}
+
+.about, .events, .sermons {
+  padding: $padding-sections;
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
+
+  h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
+}
+
+.sermon-videos, .events {
+  margin-bottom: 5rem;
+}

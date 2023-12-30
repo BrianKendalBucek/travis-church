@@ -16,3 +16,22 @@ $footer-link-hover-color: #0056b3; // Darker blue, adjust as needed
 $link-color: $header-text-color; // Reuse the header text color for links
 $link-hover-color: $header-hover-color; // Reuse the header hover color for link hovers
 $text-color: $footer-text-color; // Reuse the footer text color for general text
+
+$bg-image-hero: '/lisa.jpg';
+$bg-image-worship: '/pablo.jpg';
+$bg-image-bible: '/bible.jpg';
+
+$bg-position-center: 50% 40%;
+$bg-position-worship: 50% 35%;
+$bg-position-bible: 50% 65%;
+
+$padding-default: 50px 20px;
+$padding-sections: 4rem;
+
+$text-color-light: white;
+$text-color-dark: rgb(91, 87, 81);
+$text-color-primary: rgb(132, 174, 224);
+
+$font-size-heading: 10rem;
+$font-size-subheading: 4rem;
+$font-size-paragraph: 1.5rem;
