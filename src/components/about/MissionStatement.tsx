@@ -1,0 +1,27 @@
+import React from "react";
+
+const MissionStatement: React.FC = () => {
+  return (
+    <div className="mission-statement">
+      <p>
+        At Travis and Paulina&apos;s Church, our mission is to spread the love and
+        teachings of Jesus Christ to all corners of the world. We are committed
+        to fostering a community of faith, hope, and love where individuals and
+        families can find spiritual growth and transformation.
+      </p>
+      <p>
+        We believe in the power of prayer, the importance of biblical
+        teachings, and the value of serving others. Our church is a place where
+        you can experience God&apos;s presence, build meaningful relationships, and
+        make a positive impact on the world around you.
+      </p>
+      <p>
+        Join us on this journey of faith as we strive to make a difference in
+        our community and beyond. Together, we can live out the message of love,
+        compassion, and redemption exemplified by Jesus Christ.
+      </p>
+    </div>
+  );
+};
+
+export default MissionStatement;
