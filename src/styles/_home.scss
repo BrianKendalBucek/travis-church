@@ -21,40 +21,33 @@
   }
 }
 
-.worship {
-  background-image: url($bg-image-worship);
-  background-position: $bg-position-worship;
+.worship, .bible, .community, .baptism {
+  margin: 5rem 0;
   h2, p {
     color: $text-color-light;
   }
+}
+
+.worship {
+  background-image: url($bg-image-worship);
+  background-position: $bg-position-worship;
 }
 
 .bible {
   background-image: url($bg-image-bible);
   background-position: $bg-position-bible;
-  margin: 5rem 0;
-  h2, p {
-    color: $text-color-light;
-  }
 }
 
 .community {
   background-image: url($bg-image-community);
   background-position: $bg-position-worship;
-  margin: 5rem 0;
-  h2, p {
-    color: $text-color-light;
-  }
 }
 
 .baptism {
   background-image: url($bg-image-baptism);
   background-position: $bg-position-worship;
-  margin: 5rem 0;
-  h2, p {
-    color: $text-color-light;
-  }
 }
+
 
 .about, .events, .sermons {
   padding: $padding-sections;
@@ -69,11 +62,10 @@
   }
 }
 
-.sermon-videos {
-  display: flex;
+.sermon-videos, .events {
   margin-bottom: 5rem;
 }
 
-.events {
-  margin-bottom: 5rem;
+.sermon-videos {
+  display: flex;
 }
