@@ -69,6 +69,11 @@
   }
 }
 
-.sermon-videos, .events {
+.sermon-videos {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.events {
   margin-bottom: 5rem;
 }
