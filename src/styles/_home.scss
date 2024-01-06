@@ -56,8 +56,6 @@
   }
 }
 
-
-/* Shared styles for sections with headings and content */
 .about, .events, .sermons {
   padding: $padding-sections;
   text-align: center;
@@ -73,80 +71,4 @@
 
 .sermon-videos, .events {
   margin-bottom: 5rem;
-}
-
-/* About Us Page Styles */
-.about-us {
-  text-align: center;
-  font-size: $font-size-paragraph;
-  color: $text-color-primary;
-
-  .about-us-header {
-    background-image: url($bg-image-hero);
-    background-size: cover;
-    background-position: $bg-position-center;
-    color: $text-color-light;
-    padding: $padding-default;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    h1 {
-      font-size: $font-size-heading;
-      margin: 0;
-      padding: $padding-default;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    p {
-      font-size: $font-size-paragraph;
-    }
-  }
-
-  .mission-statement,
-  .community-involvement,
-  .leadership-team {
-    margin-bottom: 2rem;
-  }
-
-  /* Leadership Team Styles */
-  .leadership-team {
-    .leadership-list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 5rem;
-      .leader-profile {
-        text-align: center;
-        margin: 1rem;
-        flex: 1;
-        max-width: calc(50% - 2rem);
-        img {
-          border-radius: 50%;
-          width: 300px;
-          height: 300px;
-          object-fit: cover;
-        }
-        h3 {
-          margin-top: 1rem;
-          font-size: $font-size-subheading;
-        }
-      }
-    }
-  }
-}
-
-/* Additional Styles */
-.about-space {
-  padding: 5rem;
-}
-
-.brief-desc {
-  padding: 0 20rem;
-}
-
-.columns {
-  display: flex;
-}
-
-.column {
-  padding: 0 15rem;
 }

@@ -3,12 +3,13 @@ import MissionStatement from "@/components/about/MissionStatement";
 import CommunityInvolvement from "@/components/about/CommunityInvolvement";
 import LeadershipTeam from "@/components/about/LeadershipTeam";
 import "../styles/_home.scss";
-import Hero1 from "@/components/about/Hero1";
+import "../styles/_about.scss";
+import HeroAbout from "@/components/about/HeroAbout";
 
 export default function AboutUs() {
   return (
     <div className="about-us">
-      <Hero1 />
+      <HeroAbout />
       <div className="about-space">
         <MissionStatement />
         <div className="baptism"></div>

@@ -1,70 +1,76 @@
-// @import 'variables';
+@import 'variables';
 
-// .about-us {
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   text-align: center;
-//   padding: $padding-default;
-//   height: 20rem;
+.about-us {
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
 
-//   .about-us-header {
-//     background-image: url($bg-image-hero);
-//   background-position: $bg-position-center;
+  .about-us-header {
+    background-image: url($bg-image-hero);
+    background-size: cover;
+    background-position: $bg-position-center;
+    color: $text-color-light;
+    padding: $padding-default;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    h1 {
+      font-size: $font-size-heading;
+      margin: 0;
+      padding: $padding-default;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    p {
+      font-size: $font-size-paragraph;
+    }
+  }
 
-//   h2 {
-//     color: $text-color-light;
-//     font-size: $font-size-heading;
-//   }
+  .mission-statement,
+  .community-involvement,
+  .leadership-team {
+    margin-bottom: 2rem;
+  }
 
-//   p {
-//     color: $text-color-dark;
-//     font-size: $font-size-paragraph;
-//   }
-//   }
+  /* Leadership Team Styles */
+  .leadership-team {
+    .leadership-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      .leader-profile {
+        text-align: center;
+        margin: 1rem;
+        flex: 1;
+        max-width: calc(50% - 2rem);
+        img {
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
+        h3 {
+          margin-top: 1rem;
+          font-size: $font-size-subheading;
+        }
+      }
+    }
+  }
+}
 
-//   .mission-statement,
-//   .community-involvement,
-//   .leadership-team {
-//     background-color: #fff;
-//     border-radius: 5px;
-//     padding: 20px;
-//     margin-bottom: 20px;
-//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Additional Styles */
+.about-space {
+  padding: 5rem;
+}
 
-//     h2 {
-//       font-size: 2rem;
-//       margin-top: 0;
-//     }
+.brief-desc {
+  padding: 0 20rem;
+}
 
-//     p {
-//       font-size: 1.2rem;
-//       color: #555;
-//     }
+.columns {
+  display: flex;
+}
 
-//     .leadership-list {
-//       display: flex;
-//       justify-content: space-between;
-
-//       .leader-profile {
-//         flex: 1;
-//         text-align: center;
-//         margin: 10px;
-
-//         img {
-//           max-width: 100%;
-//           border-radius: 50%;
-//         }
-
-//         h3 {
-//           font-size: 1.2rem;
-//           margin: 10px 0;
-//         }
-
-//         /* Uncomment if you want to style the role or position */
-//         /* p {
-//           font-size: 1rem;
-//         } */
-//       }
-//     }
-//   }
-// }
+.column {
+  padding: 0 15rem;
+}
