@@ -1,0 +1,41 @@
+// _hero.scss
+@import 'variables';
+@import 'mixins';
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: $padding-default;
+  height: 20rem;
+  background-image: url($bg-image-hero);
+  background-position: $bg-position-center;
+
+  @include responsive-hero(15rem, 10rem, 30px 15px, 20px 10px, $font-size-heading-tablet, $font-size-heading-phone);
+
+  h2 {
+    color: $text-color-light;
+    font-size: $font-size-heading;
+
+    @include tablet {
+      font-size: 5.2rem;
+    }
+
+    @include phone {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    color: $text-color-dark;
+    font-size: $font-size-paragraph;
+
+    @include tablet {
+      font-size: 1.2rem;
+    }
+
+    @include phone {
+      font-size: 1rem;
+    }
+  }
+}

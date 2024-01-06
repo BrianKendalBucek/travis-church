@@ -1,14 +1,31 @@
+$padding-default: 20px;
+$font-size-heading: 2rem;
+$font-size-heading-tablet: 1.8rem;
+$font-size-heading-phone: 1.6rem;
+$font-size-paragraph: 1rem;
+$bg-position-center: center center;
+$text-color-light: #fff;
+$text-color-dark: #333;
+$text-color-primary: #000;
+$padding-sections: 30px;
+$font-size-subheading: 2.5rem;
+
 // Header Colors and Styles
-$header-background-color: #fff;
+$header-background-color: rgb(162, 205, 249);
 $header-text-color: #333;
 $header-hover-color: #007bff;
 $header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$header-font-family: 'Raleway', sans-serif;
+$header-font-size: 1.5rem;
 
 // Footer Colors and Styles
 $footer-background-color: #f8f9fa;
 $footer-text-color: #333;
 $footer-link-color: #007bff;
 $footer-link-hover-color: #0056b3;
+$footer-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+$footer-font-size: 1.5rem;
+$footer-padding: 20px 100px;
 
 // Global Styles
 $link-color: $header-text-color;
@@ -33,5 +50,12 @@ $text-color-dark: rgb(91, 87, 81);
 $text-color-primary: rgb(132, 174, 224);
 
 $font-size-heading: 8rem;
+$font-size-heading-tablet: 4rem;
 $font-size-subheading: 4rem;
 $font-size-paragraph: 1.5rem;
+
+$about-header-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+$about-header-h1-background-color: rgba(0, 0, 0, 0.5);
+
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;

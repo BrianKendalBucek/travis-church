@@ -1,14 +1,27 @@
+@import 'variables';
+@import 'mixins';
+@import 'hero';
 @import 'header';
 @import 'footer';
-@import 'variables';
+@import 'home';
+@import 'about';
 
 body, html {
+  display: flex;
   height: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+
+  @include tablet {
+    font-size: 14px; // Adjust font size for tablets
+  }
+
+  @include phone {
+    font-size: 12px; // Adjust font size for phones
+  }
 }
 
-#_next {  // Adjust this ID to match your root div if it's different
+#_next {
   display: flex;
   flex-direction: column;
   min-height: 100vh;

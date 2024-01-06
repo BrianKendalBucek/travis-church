@@ -1,33 +1,20 @@
 @import 'variables';
+@import 'mixins';
+@import 'hero';
 
 .about-us {
   text-align: center;
   font-size: $font-size-paragraph;
   color: $text-color-primary;
 
-  .about-us-header {
-    background-image: url($bg-image-hero);
-    background-size: cover;
-    background-position: $bg-position-center;
-    color: $text-color-light;
-    padding: $padding-default;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    h1 {
-      font-size: $font-size-heading;
-      margin: 0;
-      padding: $padding-default;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    p {
-      font-size: $font-size-paragraph;
-    }
-  }
-
   .mission-statement,
   .community-involvement,
   .leadership-team {
     margin-bottom: 2rem;
+
+    @include tablet { // Tablet
+      margin-bottom: 1rem;
+    }
   }
 
   /* Leadership Team Styles */
@@ -38,39 +25,92 @@
       align-items: center;
       flex-wrap: wrap;
       margin-top: 5rem;
+
+      @include tablet { // Tablet
+        margin-top: 3rem;
+      }
+
       .leader-profile {
         text-align: center;
         margin: 1rem;
         flex: 1;
         max-width: calc(50% - 2rem);
+
+        @include tablet { // Tablet
+          max-width: 100%; // Adjust for narrower screens
+        }
+
         img {
           border-radius: 50%;
           width: 300px;
           height: 300px;
           object-fit: cover;
+
+          @include tablet { // Tablet
+            width: 200px;
+            height: 200px;
+          }
+
+          @include phone { // Phone
+            width: 150px;
+            height: 150px;
+          }
         }
-        h3 {
-          margin-top: 1rem;
-          font-size: $font-size-subheading;
-        }
+
+        // h3 {
+        //   margin-top: 1rem;
+        //   font-size: $font-size-subheading;
+
+        //   @include tablet { // Tablet
+        //     font-size: $font-size-paragraph;
+        //   }
+        // }
       }
     }
   }
-}
 
-/* Additional Styles */
-.about-space {
-  padding: 5rem;
-}
+  /* Additional Styles */
+  .about-space {
+    padding: 5rem;
 
-.brief-desc {
-  padding: 0 20rem;
-}
+    @include tablet { // Tablet
+      padding: 3rem;
+    }
 
-.columns {
-  display: flex;
-}
+    @include phone { // Phone
+      padding: 2rem;
+    }
+  }
 
-.column {
-  padding: 0 15rem;
+  .brief-desc {
+    padding: 0 20rem;
+
+    @include tablet { // Tablet
+      padding: 0 10rem;
+    }
+
+    @include phone { // Phone
+      padding: 0 5rem;
+    }
+  }
+
+  .columns {
+    display: flex;
+
+    @include tablet { // Tablet
+      flex-direction: column;
+    }
+  }
+
+  .column {
+    padding: 0 15rem;
+
+    @include tablet { // Tablet
+      padding: 0 10rem;
+    }
+
+    @include phone { // Phone
+      padding: 0 5rem;
+    }
+  }
 }
