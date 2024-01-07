@@ -12,16 +12,17 @@
     align-items: center;
     font-family: $header-font-family;
 
-    @include tablet { // Tablet
-      flex-direction: column;
-      align-items: stretch;
-    }
-
     @include phone { // Tablet
       flex-direction: column;
       align-items: stretch;
       height: 5rem;
     }
+    
+    @include tablet { // Tablet
+      flex-direction: column;
+      align-items: stretch;
+    }
+
 
     .navList {
       list-style: none;
