@@ -2,10 +2,10 @@
 
 .footer {
   background-color: $header-background-color;
+  box-shadow: $footer-box-shadow;
   padding: $footer-padding;
   color: $footer-text-color;
   font-family: 'Arial', sans-serif;
-  box-shadow: $footer-box-shadow;
 
   .footerContent {
     display: flex;

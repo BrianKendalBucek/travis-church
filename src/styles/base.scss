@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+
+%section-base {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: $padding-default;
+  height: 20rem;
+}

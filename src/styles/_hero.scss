@@ -8,6 +8,7 @@
   text-align: center;
   padding: $padding-default;
   height: 20rem;
+  width: 120rem;
   background-image: url($bg-image-hero);
   background-position: $bg-position-center;
 
@@ -17,13 +18,13 @@
     color: $text-color-light;
     font-size: $font-size-heading;
 
-    // @include tablet {
-    //   font-size: 5.2rem;
-    // }
+    @include tablet {
+      font-size: 5.2rem;
+    }
 
-    // @include phone {
-    //   font-size: 5rem;
-    // }
+    @include phone {
+      font-size: 5rem;
+    }
   }
 
   p {

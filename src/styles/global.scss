@@ -12,13 +12,13 @@ body, html {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 
-  // @include tablet {
-  //   font-size: 14px; // Adjust font size for tablets
-  // }
+  @include tablet {
+    font-size: 14px;
+  }
 
-  // @include phone {
-  //   font-size: 12px; // Adjust font size for phones
-  // }
+  @include phone {
+    font-size: 12px;
+  }
 }
 
 #_next {

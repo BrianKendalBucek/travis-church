@@ -1,7 +1,10 @@
-@import 'variables';
+@import "variables";
+@import "mixins";
 
-
-@mixin common-styles {
+// Common component styles
+.about,
+.events,
+.sermons {
   padding: $padding-sections;
   text-align: center;
   font-size: $font-size-paragraph;
@@ -14,17 +17,3 @@
     font-size: $font-size-subheading;
   }
 }
-
-@mixin tablet {
-  @media (max-width: $breakpoint-tablet) {
-    @content;
-  }
-}
-
-// Mixin for phone
-@mixin phone {
-  @media (max-width: $breakpoint-phone) {
-    @content;
-  }
-}
-
