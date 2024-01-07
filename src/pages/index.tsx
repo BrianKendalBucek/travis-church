@@ -11,7 +11,7 @@ export default function Home() {
   const heroBackgroundImage = "/lisa.jpg";
 
   return (
-    <div className="homePage">
+    <div>
       <Hero
         title={heroTitle}
         backgroundImage={heroBackgroundImage}

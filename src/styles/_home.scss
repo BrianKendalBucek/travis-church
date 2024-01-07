@@ -1,8 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import 'hero';
+@import "variables";
+@import "mixins";
+@import "hero";
 
-// Base class for common section styles
 %section-base {
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,77 +9,83 @@
   padding: $padding-default;
   height: 20rem;
 
-  @include tablet { // Tablet
-    height: 15rem;
-    padding: 30px 15px;
-  }
+  // @include tablet { // Tablet
+  //   height: 15rem;
+  //   padding: 30px 15px;
+  // }
 
-  @include phone { // Phone
-    height: 10rem;
-    padding: 20px 10px;
-  }
+  // @include phone { // Phone
+  //   height: 10rem;
+  //   padding: 20px 10px;
+  // }
 }
 
-// Specific sections
-.worship, .bible, .community, .baptism {
+.worship,
+.bible {
   @extend %section-base;
 
-  // Individual background styles
-  &.worship { background-image: url($bg-image-worship); background-position: $bg-position-worship; }
-  &.bible { background-image: url($bg-image-bible); background-position: $bg-position-bible; }
-  &.community { background-image: url($bg-image-community); background-position: $bg-position-worship; }
-  &.baptism { background-image: url($bg-image-baptism); background-position: $bg-position-worship; }
+  &.worship {
+    background-image: url($bg-image-worship);
+    background-position: $bg-position-worship;
+  }
+  &.bible {
+    background-image: url($bg-image-bible);
+    background-position: $bg-position-bible;
+  }
 }
 
-// Other styles...
-.about, .events, .sermons {
+// COMPONENT STYLES
+.about,
+.events,
+.sermons {
   padding: $padding-sections;
   text-align: center;
   font-size: $font-size-paragraph;
   color: $text-color-primary;
-
-  // Responsive styles
-  @include tablet {
-    padding: 2rem;
-  }
-
-  @include phone {
-    padding: 1rem;
-  }
-
+  
   h2 {
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     color: $text-color-primary;
     font-size: $font-size-subheading;
 
-    @include tablet {
-      font-size: 2rem;
-    }
+    // @include tablet {
+    //   font-size: 2rem;
+    // }
 
-    @include phone {
-      font-size: 1.5rem;
-    }
+    // @include phone {
+    //   font-size: 1.5rem;
+    // }
   }
+  // Responsive styles
+  // @include tablet {
+  //   padding: 2rem;
+  // }
+
+  // @include phone {
+  //   padding: 1rem;
+  // }
+
 }
 
-.sermon-videos, .events {
+.sermon-videos,
+.events {
   margin-bottom: 5rem;
 
-  @include tablet {
-    margin-bottom: 3rem;
-  }
+  // @include tablet {
+  //   margin-bottom: 3rem;
+  // }
 
-  @include phone {
-    margin-bottom: 2rem;
-  }
+  // @include phone {
+  //   margin-bottom: 2rem;
+  // }
 }
 
 .sermon-videos {
   display: flex;
   justify-content: center;
 
-  @include tablet {
-    flex-direction: column;
-  }
+  // @include tablet {
+  //   flex-direction: column;
+  // }
 }

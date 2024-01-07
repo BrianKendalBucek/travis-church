@@ -1,34 +1,34 @@
 @import 'variables';
 
 // Mixin for tablet
-@mixin tablet {
-  @media (max-width: $breakpoint-tablet) {
-    @content;
-  }
-}
+// @mixin tablet {
+//   @media (max-width: $breakpoint-tablet) {
+//     @content;
+//   }
+// }
 
-// Mixin for phone
-@mixin phone {
-  @media (max-width: $breakpoint-phone) {
-    @content;
-  }
-}
+// // Mixin for phone
+// @mixin phone {
+//   @media (max-width: $breakpoint-phone) {
+//     @content;
+//   }
+// }
 
-// Mixin for responsive hero
-@mixin responsive-hero($tablet-height, $phone-height, $tablet-padding, $phone-padding, $tablet-font-size, $phone-font-size) {
-  @include tablet {
-    height: $tablet-height;
-    padding: $tablet-padding;
-    h2 {
-      font-size: $tablet-font-size;
-    }
-  }
+// // Mixin for responsive hero
+// @mixin responsive-hero($tablet-height, $phone-height, $tablet-padding, $phone-padding, $tablet-font-size, $phone-font-size) {
+//   @include tablet {
+//     height: $tablet-height;
+//     padding: $tablet-padding;
+//     h2 {
+//       font-size: $tablet-font-size;
+//     }
+//   }
 
-  @include phone {
-    height: $phone-height;
-    padding: $phone-padding;
-    h2 {
-      font-size: $phone-font-size;
-    }
-  }
-}
+  // @include phone {
+  //   height: $phone-height;
+  //   padding: $phone-padding;
+  //   h2 {
+  //     font-size: $phone-font-size;
+  //   }
+  // }
+// }
