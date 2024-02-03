@@ -1,8 +1,12 @@
 import React from "react";
+import styles from "../../styles/MissionStatement.module.scss";
 
 export default function MissionStatement() {
+
+  const classNames = `${styles.missionStatement} ${styles.missionStatementBriefDesc}`;
+
   return (
-    <div className="mission-statement brief-desc">
+    <div className={classNames}>
       <p>
         At Travis and Paulina&apos;s Church, our mission is to spread the love and
         teachings of Jesus Christ to all corners of the world. We are committed

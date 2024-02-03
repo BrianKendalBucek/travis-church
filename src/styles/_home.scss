@@ -18,20 +18,23 @@
   }
 }
 
-// COMPONENT STYLES
 .about,
 .events,
 .sermons {
   @include common-styles;
+  // padding: $padding-sections;
+  // text-align: center;
+  // font-size: $font-size-paragraph;
+  // color: $text-color-primary;
 
-  @include tablet {
-    font-size: 2rem;
-  }
-
-  @include phone {
-    font-size: 1.5rem;
+  h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
   }
 }
+
 
 .sermon-videos,
 .events {
