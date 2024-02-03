@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .footer {
   background-color: $header-background-color;
@@ -7,12 +8,17 @@
   color: $footer-text-color;
   font-family: 'Arial', sans-serif;
 
+  
   .footerContent {
     display: flex;
     justify-content: space-between;
     align-items: start;
     margin: auto;
-
+    
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
     // @include tablet { // Tablet
     //   flex-direction: column;
     //   align-items: center;
@@ -74,10 +80,14 @@
   iframe {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    // margin: 20px 0;
 
     // @include tablet { // Tablet
     //   margin: 15px 0;
+    // }
+
+    // @include phone {
+    //   width: 1rem;
     // }
   }
 }

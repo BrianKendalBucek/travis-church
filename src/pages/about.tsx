@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import MissionStatement from "@/components/about/MissionStatement";
 import CommunityInvolvement from "@/components/about/CommunityInvolvement";
 import LeadershipTeam from "@/components/about/LeadershipTeam";
-import "../styles/_hero.scss";
 import "../styles/_about.scss";
 
 
@@ -15,11 +14,12 @@ export default function AboutUs() {
     <div>
       <Hero title={heroTitle} backgroundImage={heroBackgroundImage} />
       {/* <div className="about-space"> */}
-      <MissionStatement />
+
+      {/* <MissionStatement /> */}
       <div className="baptism"></div>
-      <CommunityInvolvement />
+      {/* <CommunityInvolvement /> */}
       <div className="community"></div>
-      <LeadershipTeam />
+      {/* <LeadershipTeam /> */}
       {/* </div> */}
     </div>
   );

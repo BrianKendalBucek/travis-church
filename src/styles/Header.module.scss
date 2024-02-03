@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .header {
   background-color: $header-background-color;
@@ -15,7 +16,6 @@
     @include phone { // Tablet
       flex-direction: column;
       align-items: stretch;
-      height: 5rem;
     }
     
     @include tablet { // Tablet
@@ -55,12 +55,12 @@
 
         @include tablet { // Tablet
           margin: 0.5rem 0; // Adjust margin for vertical layout
-          font-size: 5rem;
+          // font-size: 5rem;
         }
 
         @include phone { // Phone
           // font-size: 1rem; // Smaller font size for smaller screens
-          font-size: 4rem;
+          // font-size: 4rem;
         }
 
         a {

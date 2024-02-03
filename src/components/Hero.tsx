@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/Hero.module.scss";
 
 interface HeroProps {
   title: string;
@@ -7,11 +8,13 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
-  const heroStyle = backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {};
+  const heroStyle = backgroundImage
+    ? { backgroundImage: `url(${backgroundImage})` }
+    : {};
 
   return (
-    <section className="hero" style={heroStyle}>
-      <h2>{title}</h2>
+    <section className={styles.hero} style={heroStyle}>
+      <h1>{title}</h1>
       {subtitle && <p>{subtitle}</p>}
     </section>
   );

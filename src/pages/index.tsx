@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/home/About";
 import Events from "@/components/home/Events";
 import Sermons from "@/components/home/Sermons";
-import "../styles/_hero.scss";
 import '../styles/_home.scss';
 
 export default function Home() {
@@ -16,11 +15,11 @@ export default function Home() {
         title={heroTitle}
         backgroundImage={heroBackgroundImage}
       />
-      <About />
+      {/* <About /> */}
       <div className="worship"></div>
-      <Events />
+      {/* <Events /> */}
       <div className="bible"></div>
-      <Sermons />
+      {/* <Sermons /> */}
     </div>
   );
 }

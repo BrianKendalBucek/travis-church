@@ -1,14 +1,15 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import styles from "../styles/Footer.module.scss";
 
 const Footer: React.FC = () => {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
   return (
-    <footer className="footer">
-      <div className="footerContent">
-        <div className="mapSection">
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        <div className={styles.mapSection}>
           <iframe
             width="600"
             height="450"
@@ -19,22 +20,38 @@ const Footer: React.FC = () => {
             src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=9.845323,-83.940137`}
           ></iframe>
         </div>
-        <div className="socialMediaSection">
-          <Link href="/about">About Us</Link>
-          {/* <a href="#!">Contact</a>
-          <a href="#!">Privacy Policy</a> */}
-          <a href="#!">
+        <div className={styles.socialMediaSection}>
+          <Link className={styles.link} href="/about">
+            About Us
+          </Link>
+          {/* Add other links as needed */}
+          <a
+            href="https://www.facebook.com"
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookF />
           </a>
-          <a href="#!">
+          <a
+            href="https://www.twitter.com"
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
           </a>
-          <a href="#!">
+          <a
+            href="https://www.instagram.com"
+            className={styles.socialLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />
           </a>
         </div>
       </div>
-      <div className="copyRightSection">
+      <div className={styles.copyRightSection}>
         © {new Date().getFullYear()} Super Fe
       </div>
     </footer>

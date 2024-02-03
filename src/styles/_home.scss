@@ -1,8 +1,8 @@
 @import "variables";
 @import "mixins";
 @import "base";
-@import "hero";
 
+// FIX - dry this code with relation to _about.scss
 
 .worship,
 .bible {
@@ -29,7 +29,7 @@
   }
 
   @include phone {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 }
 
