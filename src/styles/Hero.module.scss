@@ -18,7 +18,7 @@
   @include phone {
     // display: flex;
     // min-width: 120rem;
-    // font-size: 5rem;
+    // font-size: 2rem;
     height: 12rem
   }
 
@@ -32,7 +32,7 @@
     }
 
     @include phone {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 

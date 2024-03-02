@@ -19,9 +19,24 @@
 }
 
 .about,
-.events,
+// .events,
 .sermons {
   @include common-styles;
+
+  h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
+}
+
+.events {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -84,10 +99,9 @@
   width: 80vw;
   height: 900px;
   max-width: 90vw;
-}
 
-@media (max-width: 600px) {
-  .events iframe {
-    height: 300px;
+  @media (max-width: 600px) {
+      height: 300px;
   }
 }
+

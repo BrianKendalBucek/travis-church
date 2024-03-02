@@ -17,7 +17,7 @@ export default function AboutUs() {
 
       {/* <MissionStatement /> */}
       <div className="baptism"></div>
-      <CommunityInvolvement />
+      {/* <CommunityInvolvement /> */}
       <div className="community"></div>
       {/* <LeadershipTeam /> */}
       {/* </div> */}
