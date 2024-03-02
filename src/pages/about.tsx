@@ -19,7 +19,7 @@ export default function AboutUs() {
       <div className="baptism"></div>
       <CommunityInvolvement />
       <div className="community"></div>
-      {/* <LeadershipTeam /> */}
+      <LeadershipTeam />
       {/* </div> */}
     </div>
   );

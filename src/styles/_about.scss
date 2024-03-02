@@ -2,6 +2,12 @@
 @import "mixins";
 @import "base";
 
+h2 {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  color: $text-color-primary;
+  font-size: $font-size-subheading;
+}
 // dry this code with relation to _home.scss
 .community,
 .baptism {
@@ -51,7 +57,16 @@
 
 
 .community-involvement {
-  @include common-styles;
+  // @include common-styles;
+  padding: 3rem;
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
+
+  h1 {
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
   
   @include tablet {
     font-size: 2rem;
@@ -85,6 +100,89 @@
 
   @include phone { 
     padding: 0;
+    font-size: 1.5rem;
+  }
+}
+
+
+.leadership-team {
+  text-align: center;
+  font-size: 35px;
+  color: $text-color-primary;
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .leadership-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    @include tablet { // Tablet
+      margin-top: 3rem;
+    }
+
+    .leader-profile {
+      text-align: center;
+      margin: 1rem;
+      margin-bottom: 2rem;
+      flex: 1;
+      max-width: calc(50% - 2rem);
+
+      @include tablet { // Tablet
+        max-width: 100%; // Adjust for narrower screens
+      }
+
+      .leader-profile-img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+
+        @include tablet { // Tablet
+          width: 200px;
+          height: 200px;
+        }
+
+        @include phone { // Phone
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+.about-space {
+  padding: 5rem;
+
+  // @include tablet { // Tablet
+  //   padding: 3rem;
+  // }
+
+  // @include phone { // Phone
+  //   padding: 2rem;
+  // }
+}
+
+.brief-desc {
+  // padding: 0 50rem;
+
+  @media (max-width: 1111px) {
+    // flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  @include tablet { // Tablet
+    padding: 0 10rem;
+    font-size: 2rem;
+  }
+
+  @include phone { // Phone
+    padding: 0 5rem;
     font-size: 1.5rem;
   }
 }
