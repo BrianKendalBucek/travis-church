@@ -15,11 +15,11 @@ export default function Home() {
         title={heroTitle}
         backgroundImage={heroBackgroundImage}
       />
-      {/* <About /> */}
+      <About />
       <div className="worship"></div>
-      {/* <Events /> */}
+      <Events />
       <div className="bible"></div>
-      {/* <Sermons /> */}
+      <Sermons />
     </div>
   );
 }

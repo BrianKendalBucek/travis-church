@@ -35,7 +35,6 @@
   }
 }
 
-
 .sermon-videos,
 .events {
   margin-bottom: 5rem;
@@ -49,15 +48,81 @@
   }
 }
 
-.sermon-videos {
+.sermon {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  // align-items: center;
 
+    
   @include phone {
-    flex-direction: column;
+    // flex-direction: column;
+    // align-items: center;
+    // height: 40rem;
+    // width: 20rem;
+
   }
 
   @include tablet {
     flex-direction: column;
+    align-items: center;
+    // height: 180rem;
+  }
+
+}
+
+.sermon-videos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25rem;
+
+
+  
+    @include phone {
+      // flex-direction: column;
+      // align-items: center;
+      // height: 80rem;
+      // width: 20rem;
+
+    }
+  
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      height: 50rem;
+
+    }
+}
+
+.sermon-videos iframe{
+  width: 25vw;
+  height: 25vh;
+  margin: 1rem;
+
+  @include phone {
+    // flex-direction: column;
+    // align-items: center;
+    // height: 15rem;
+    // width: 25vw;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    // height: 55rem;
+    width: 60vw;
+  }
+}
+
+.events iframe {
+  border: solid 1px #777;
+  width: 80vw; /* Make iframe responsive */
+  height: 900px; /* Initial height, adjust as needed */
+  max-width: 90vw; /* Maximum width of the iframe */
+}
+
+@media (max-width: 600px) {
+  .events iframe {
+    height: 300px; /* Smaller height for smaller devices */
   }
 }

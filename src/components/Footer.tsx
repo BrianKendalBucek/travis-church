@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.socialMediaSection}>
           <Link className={styles.link} href="/about">
-            About Us
+            About
           </Link>
           {/* Add other links as needed */}
           <a

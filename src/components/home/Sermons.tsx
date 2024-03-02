@@ -14,8 +14,6 @@ export default function Sermons() {
         {videoUrls.map((url, index) => (
           <iframe
             key={index}
-            width="560"
-            height="315"
             src={url}
             title={`YouTube video player ${index}`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
