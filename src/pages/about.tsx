@@ -15,9 +15,9 @@ export default function AboutUs() {
       <Hero title={heroTitle} backgroundImage={heroBackgroundImage} />
       {/* <div className="about-space"> */}
 
-      {/* <MissionStatement /> */}
+      <MissionStatement />
       <div className="baptism"></div>
-      {/* <CommunityInvolvement /> */}
+      <CommunityInvolvement />
       <div className="community"></div>
       {/* <LeadershipTeam /> */}
       {/* </div> */}

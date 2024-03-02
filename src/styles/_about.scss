@@ -16,3 +16,64 @@
     background-position: $bg-position-worship;
   }
 }
+
+.mission-statement {
+  @include common-styles;
+
+  padding: 2rem 90rem;
+  font-size: 2rem;
+
+  @media (max-width: 3880px) {
+    padding: 2rem 70rem;
+  }
+
+  @media (max-width: 3155px) {
+    padding: 2rem 50rem;
+  }
+
+  @media (max-width: 2288px) {
+    padding: 2rem 30rem;
+  }
+
+  @media (max-width: 1563px) {
+    padding: 2rem 10rem;
+  }
+
+  @include tablet {
+    padding: 2rem 5rem;
+    font-size: 2rem;
+  }
+
+  @include phone {
+    font-size: 1.5rem;
+  }
+}
+
+
+.community-involvement {
+  @include common-styles;
+  
+  @include tablet {
+    font-size: 2rem;
+  }
+  
+  @include phone {
+    font-size: 1.5rem;
+  } 
+}
+
+.columns {
+  display: flex;
+  
+  font-size: 2rem;
+
+  @media (max-width: 1442px) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  @include phone { 
+    font-size: 1.5rem;
+  }
+}
