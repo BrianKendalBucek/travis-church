@@ -23,7 +23,7 @@
   @include common-styles;
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     padding-bottom: 2rem;
     color: $text-color-primary;
     font-size: $font-size-subheading;
@@ -38,6 +38,7 @@
   padding-bottom: 2rem;
 
   h2 {
+    margin-top: 7rem;
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     color: $text-color-primary;
@@ -58,21 +59,23 @@
   }
 }
 
-.sermon {
-  display: flex;
-  flex-direction: row;
+// .sermon {
+//   display: flex;
+//   flex-direction: row;
 
-  @include tablet {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+//   @include tablet {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
 
 .sermon-videos {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 25rem;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
 
   @include tablet {
     flex-direction: column;

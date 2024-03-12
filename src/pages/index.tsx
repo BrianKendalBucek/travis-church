@@ -6,7 +6,7 @@ import Sermons from "@/components/home/Sermons";
 import '../styles/_home.scss';
 
 export default function Home() {
-  const heroTitle = "Welcome to Super Fe";
+  const heroTitle = "Welcome to Church";
   const heroBackgroundImage = "/lisa.jpg";
 
   return (
