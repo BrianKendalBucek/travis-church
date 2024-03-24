@@ -11,14 +11,7 @@
   background-position: $bg-position-center;
   margin: 0;
 
-  @include tablet {
-    // width: 50rem;
-  }
-
   @include phone {
-    // display: flex;
-    // min-width: 120rem;
-    // font-size: 2rem;
     height: 12rem
   }
 

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// FIX
 interface LayoutProps {
   children: React.ReactNode;
 }

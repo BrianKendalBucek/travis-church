@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Hero.module.scss";
 
+// FIX
 interface HeroProps {
   title: string;
   subtitle?: string;
