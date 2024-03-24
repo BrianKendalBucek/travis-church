@@ -25,3 +25,51 @@
   }
 }
 
+// Mixin for common background properties
+@mixin bg-properties($image-url, $position: center) {
+  background-image: url($image-url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $position;
+  text-align: center;
+  padding: $padding-default;
+  height: 30rem;
+}
+
+// Mixin for shared element styles (worship, junglehike, etc.)
+@mixin shared-element-styles($height: 20rem) {
+  height: $height;
+  margin: 5rem 0;
+  h2, p {
+    color: $text-color-light;
+  }
+  @include phone {
+    margin: 1rem 0;
+  }
+}
+
+// Mixin for responsive text and padding for sections
+@mixin responsive-text-padding {
+  padding: 2rem 8rem;
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $text-color-primary;
+
+  h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
+
+  @media (max-width: 665px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1090px) {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}

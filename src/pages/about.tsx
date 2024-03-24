@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import MissionStatement from "@/components/about/MissionStatement";
 import CommunityInvolvement from "@/components/about/CommunityInvolvement";
 import LeadershipTeam from "@/components/about/LeadershipTeam";
-import "../styles/_about.scss";
+// import "../styles/_about.scss";
 
 
 export default function AboutUs() {

@@ -1,26 +1,122 @@
 @import "variables";
 @import "mixins";
-@import "base";
+
+// FIX - dry this code with relation to _about.scss
+
+.worship {
+  @include bg-properties($bg-image-worship, $bg-position-worship);
+}
+// .junglehike {
+//   @include bg-properties($bg-image-junglehike, $bg-position-junglehike);
+// }
+.bible {
+  @include bg-properties($bg-image-bible, $bg-position-bible);
+}
+.community {
+  @include bg-properties($bg-image-community, $bg-position-worship);
+}
+.baptism {
+  @include bg-properties($bg-image-baptism, $bg-position-worship);
+}
+// .donations {
+//   @include bg-properties($bg-image-donations, $bg-position-worship);
+// }
+
+
+.about,
+.sermons {
+  @include common-styles;
+
+  h2 {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
+}
+
+.events {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+
+  h2 {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    color: $text-color-primary;
+    font-size: $font-size-subheading;
+  }
+}
+
+.sermon-videos,
+.events {
+  margin-bottom: 5rem;
+
+  @include tablet {
+    margin-bottom: 3rem;
+  }
+
+  @include phone {
+    margin-bottom: 2rem;
+  }
+}
+
+// .sermon {
+//   display: flex;
+//   flex-direction: row;
+
+//   @include tablet {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
+
+.sermon-videos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25rem;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+  }
+}
+
+.sermon-videos iframe {
+  width: 25vw;
+  height: 25vh;
+  margin: 1rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+  }
+}
+
+.events iframe {
+  border: solid 1px #777;
+  width: 80vw;
+  height: 900px;
+  max-width: 90vw;
+
+  @media (max-width: 600px) {
+      height: 300px;
+  }
+}
 
 h2 {
   margin-bottom: 1rem;
   padding-bottom: 2rem;
   color: $text-color-primary;
   font-size: $font-size-subheading;
-}
-// dry this code with relation to _home.scss
-.community,
-.baptism {
-  @extend %section-base;
-
-  &.community {
-    background-image: url($bg-image-community);
-    background-position: $bg-position-worship;
-  }
-  &.baptism {
-    background-image: url($bg-image-baptism);
-    background-position: $bg-position-worship;
-  }
 }
 
 .mission-statement {

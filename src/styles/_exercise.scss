@@ -1,0 +1,184 @@
+// @import "variables";
+// @import "mixins";
+// @import "base";
+
+// // Base styles for common elements
+// h2 {
+//   margin-bottom: 1rem;
+//   padding-bottom: 2rem;
+//   color: $text-color-primary;
+//   font-size: $font-size-subheading;
+// }
+
+// // Section-specific styles using extends and mixins
+// .worship,
+// .bible,
+// .community,
+// .baptism {
+//   @extend %section-base;
+
+//   &.worship {
+//     background-image: url($bg-image-worship);
+//     background-position: $bg-position-worship;
+//   }
+//   &.bible {
+//     background-image: url($bg-image-bible);
+//     background-position: $bg-position-bible;
+//   }
+//   &.community {
+//     background-image: url($bg-image-community);
+//     background-position: $bg-position-worship;
+//   }
+//   &.baptism {
+//     background-image: url($bg-image-baptism);
+//     background-position: $bg-position-worship;
+//   }
+// }
+
+// // Common styling pattern extracted to mixin for reuse
+// .about,
+// .sermons,
+// .mission-statement,
+// .community-involvement {
+//   @include common-styles;
+
+//   h2 {
+//     margin-bottom: 4rem;
+//     padding-bottom: 2rem;
+//   }
+// }
+
+// // Responsive adjustments for sermon videos and event sections
+// .sermon-videos,
+// .events {
+//   margin-bottom: 5rem;
+  
+//   @include tablet {
+//     margin-bottom: 3rem;
+//   }
+
+//   @include phone {
+//     margin-bottom: 2rem;
+//   }
+// }
+
+// .sermon-videos {
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   height: 25rem;
+//   margin-top: 8rem;
+//   margin-bottom: 12rem;
+
+//   iframe {
+//     width: 25vw;
+//     height: 25vh;
+//     margin: 1rem;
+
+//     @include tablet {
+//       width: 60vw;
+//     }
+//   }
+
+//   @include tablet {
+//     flex-direction: column;
+//     height: 50rem;
+//   }
+// }
+
+// // Specific adjustments for events
+// .events {
+//   text-align: center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-bottom: 2rem;
+
+//   iframe {
+//     border: solid 1px #777;
+//     width: 80vw;
+//     height: 900px;
+//     max-width: 90vw;
+
+//     @media (max-width: 600px) {
+//       height: 300px;
+//     }
+//   }
+// }
+
+// // Styles for community involvement, columns, and leadership
+// .community-involvement,
+// .columns,
+// .column,
+// .leadership-team {
+//   text-align: center;
+//   font-size: $font-size-paragraph;
+//   color: $text-color-primary;
+
+//   h1,
+//   h3 {
+//     font-size: $font-size-subheading;
+//   }
+
+//   @include tablet {
+//     font-size: 2rem;
+//   }
+
+//   @include phone {
+//     font-size: 1.5rem;
+//   }
+// }
+
+// // Flex layouts for columns and leadership profiles
+// .columns {
+//   display: flex;
+
+//   @media (max-width: 2977px) {
+//     flex-direction: column;
+//   }
+// }
+
+// .column,
+// .leadership-team .leadership-list .leader-profile {
+//   padding: 3rem 30rem;
+
+//   @media (max-width: 1457px) {
+//     padding: 2rem 10rem;
+//   }
+
+//   @include tablet {
+//     padding: 2rem 5rem;
+//   }
+
+//   @include phone {
+//     padding: 0;
+//     font-size: 1.5rem;
+//   }
+// }
+
+// // Leadership team specific styles
+// .leadership-team {
+//   .leadership-list {
+//     .leader-profile-img {
+//       border-radius: 50%;
+//       width: 300px;
+//       height: 300px;
+//       object-fit: cover;
+
+//       @media (min-width: 1500px) {
+//         width: 500px;
+//         height: 500px;
+//       }
+
+//       @include tablet {
+//         width: 200px;
+//         height: 200px;
+//       }
+
+//       @include phone {
+//         width: 150px;
+//         height: 150px;
+//       }
+//     }
+//   }
+// }
