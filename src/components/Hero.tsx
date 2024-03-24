@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/Hero.module.scss";
 
 // FIX
 interface HeroProps {
@@ -14,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
     : {};
 
   return (
-    <section className={styles.hero} style={heroStyle}>
+    <section className='hero' style={heroStyle}>
       <h1>{title}</h1>
       {subtitle && <p>{subtitle}</p>}
     </section>

@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'header';
+@import 'hero';
 
 
 // Your global.scss should ideally be used for truly global styles, such as setting up typography, color themes, global margins, and paddings, or defining global mixins and variables. Component-specific styles are better managed within their respective modules using CSS Modules or Sass Modules.
